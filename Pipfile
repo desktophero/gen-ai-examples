@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+unstructured = "*"
+markdown = "*"
+langchain-mistralai = "*"
+langchain-community = "*"
+chromadb = "*"
+spacy = "*"
+pymupdf = "*"
+sentence-transformers = "*"
+qdrant-client = "*"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+setup = "./setup.sh"
+load = "pipenv run python app/loader.py"
+search = "pipenv run python app/search.py"
