@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# early work to run scripts against the local ollama instance
+
 HOST=localhost
 PORT=11434
 STREAM=false
