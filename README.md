@@ -41,6 +41,7 @@ The way I get my workstation into the right space includes the following steps:
 - Run `pipenv run install`: install dependencies
 - Run `pipenv run setup`: get PDF files as data
 - Run `pipenv run mistral`: get the LLM into Ollama
+- Run `pipenv run gen-docs`: this will create a series of local Markdown (`md`) files to show loading multiple `md` files
 
 ## Use Cases
 
@@ -62,7 +63,9 @@ The initial testing I'm doing uses all public data. This includes PDFs and JSON 
 
 After running the prep steps above:
 
-- Run `pipenv run load`: this loads the Gatsby document to Chroma. Chroma is installed via `pipenv install` described above.
+- Run `pipenv run load --type <pdf|md>`: depending on your choice of `pdf` (default) or `md`, the vector database is loaded with different information:
+  - `pdf`: this loads the Gatsby document to Chroma. 
+  - `md`: this loads the gibberish IT policy markdown files from `data/gibberish/output`
 - Run `pipenv run search "<your search query>"`: this will search the vector database using the LLM
 
 Here are some examples:

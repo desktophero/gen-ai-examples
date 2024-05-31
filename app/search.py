@@ -6,7 +6,7 @@ from internals.config import (
   EMBEDDINGS_NAME,
   MODEL_NAME)
 
-from langchain.vectorstores.chroma import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.chains import RetrievalQA
 from langchain_community.llms import Ollama
