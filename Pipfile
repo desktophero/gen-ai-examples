@@ -23,7 +23,7 @@ python_version = "3.11"
 setup = "./setup.sh"
 load = "pipenv run python app/loader.py"
 search = "pipenv run python app/search.py"
-mistral = "ollama pull mistral-openorca"
+mistral = "ollama pull mistral"
 gen-docs = "python3 data/gibberish/docs.py"
 unit-tests = "pipenv run pytest tests/ -s"
 

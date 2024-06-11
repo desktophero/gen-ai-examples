@@ -38,7 +38,7 @@ The way I get my workstation into the right space includes the following steps:
 
 - Open a terminal into the directory where you cloned this repo
 - Run `pipenv shell`: use a `pipenv` shell
-- Run `pipenv run install`: install dependencies
+- Run `pipenv install`: install dependencies
 - Run `pipenv run setup`: get PDF files as data
 - Run `pipenv run mistral`: get the LLM into Ollama
 - Run `pipenv run gen-docs`: this will create a series of local Markdown (`md`) files to show loading multiple `md` files
