@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 langchain = "*"
+langchain-huggingface = "*"
 unstructured = "*"
 markdown = "*"
 langchain-mistralai = "*"
@@ -15,6 +16,7 @@ pymupdf = "*"
 sentence-transformers = "*"
 qdrant-client = "*"
 ollama = "*"
+grpcio = "==1.59.3"
 
 [requires]
 python_version = "3.11"

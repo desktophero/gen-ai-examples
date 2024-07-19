@@ -7,8 +7,8 @@ from internals.config import (
   MODEL_NAME)
 
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.chains import RetrievalQA
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.llms import Ollama
 
 
